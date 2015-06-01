@@ -1,0 +1,74 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/app_toolbar"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:minHeight="?attr/actionBarSize"
+        android:background="?attr/colorPrimary" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="@dimen/toolbar_margin"
+        android:layout_below="@+id/app_toolbar"
+        android:orientation="vertical">
+
+        <TextView
+            android:text="@string/title"
+            style="@style/CodeFont"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <Button
+            android:id="@+id/spotify_streamer_button"
+            style="@style/ButtonOrange"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/spotify_streamer"/>
+
+        <Button
+            android:id="@+id/scores_button"
+            style="@style/ButtonOrange"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/score_app"/>
+
+        <Button
+            android:id="@+id/library_button"
+            style="@style/ButtonOrange"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/library_app"/>
+
+        <Button
+            android:id="@+id/build_it_bigger_button"
+            style="@style/ButtonOrange"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/build_bigger"/>
+
+
+        <Button
+            android:id="@+id/xyz_button"
+            style="@style/ButtonOrange"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/xyz_reader"/>
+
+        <Button
+            android:id="@+id/my_app_button"
+            style="@style/ButtonRed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/my_app"/>
+    </LinearLayout>
+
+</RelativeLayout>
